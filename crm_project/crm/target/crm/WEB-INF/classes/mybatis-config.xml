@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--日志输出-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--起别名-->
+    <typeAliases>
+        <package name="org.example.workbench.domain"/>
+        <package name="org.example.settings.domain"/>
+    </typeAliases>
+    <mappers>
+        <package name="org.example.workbench.mapper"/>
+        <package name="org.example.settings.mapper"/>
+    </mappers>
+</configuration>
